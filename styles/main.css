@@ -124,6 +124,7 @@ hr {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 25px;
+    
 }
 
 .articles__title {
@@ -140,6 +141,7 @@ hr {
 .articles__text span {
     font-weight: bold;
     color: #db522e;
+    padding-bottom: 20px;
 }
 
 small {
@@ -150,10 +152,28 @@ a {
     text-decoration: none;
 }
 
+/* Organizacion de las columnas donde debo igualar la
+muestra propuesta envio commit para continuar con el
+aprendizaje de git y refuerzo de css y html*/
+
+.articles__content {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
 .button {
     font-size: 13px;
     color: white;
     padding: 5px 20px;
     border-radius: 1px solid gray;
     background-color: black;
+    align-content: flex-end;
 }
+
+.articles__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
